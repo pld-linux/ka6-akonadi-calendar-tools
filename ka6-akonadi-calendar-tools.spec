@@ -6,6 +6,7 @@
 %define		qtver		5.15.2
 %define		kaname		akonadi-calendar-tools
 Summary:	Akonadi Calendar Tools
+Summary(pl.UTF-8):	Narzędzia kalendarza Akonadi
 Name:		ka6-%{kaname}
 Version:	26.04.1
 Release:	1
@@ -38,6 +39,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Console applications and utilities for managing calendars in Akonadi.
+
+%description -l pl.UTF-8
+Konsolowe aplikacje i programy narzędziowe do zarządzania kalendarzami w Akonadi.
 
 %prep
 %setup -q -n %{kaname}-%{version}
